@@ -31,9 +31,22 @@ venv\Scripts\activate
 
 Once activated, your terminal prompt should change to indicate the virtual environment is active.
 
-## running the project
+## Running the project
+**Step 1**
 
+```
+cd .\josh_talk_assignment\
+```
+**Step 2**
 
+```
+pip install -r .\requirement.txt
+```
+**Step 3**
+
+```
+python .\manage.py runserver
+```
 
 ## This document provides details on the API endpoints
 
@@ -99,4 +112,9 @@ POST /api/tasks/{task_id}/assign_users/
 ## Notes
 - Ensure that the API server is running on `127.0.0.1:8000`.
 - Replace `{task_id}` with the actual task ID when making requests.
+- Postman Collection is alos attached with examples
+- To use the admin console, use the following credentials:
+  - **Username**: admin
+  - **Password**: admin
+
 
